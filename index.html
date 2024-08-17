@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html ng-app="myapp">
+<head>
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta name="keywords" content="HTML5 Template" />
+    <meta name="description" >
+    <meta name="author" content="pixelgeeklab.com">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Web Fonts  -->
+    <link href='css/css.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="fonts/font.css">
+
+    <!-- Vendor CSS -->
+    <link rel="stylesheet" href="vendor/fontawesome/css/font-awesome.css">
+    <link rel="stylesheet" href="vendor/owlcarousel/owl.carousel.css" media="screen">
+    <link rel="stylesheet" href="vendor/owlcarousel/owl.theme.css" media="screen">
+    <link href="vendor/owl-carousel/owl.transitions.html" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="vendor/flexslider/flexslider.css" media="screen">
+    <link rel="stylesheet" href="vendor/chosen/chosen.css" media="screen">
+    <link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.css" media="screen">
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/theme-animate.css">
+
+    <style>
+        .container {
+            background-color: #fa7881;
+            position:relative;
+            margin-top:100px;
+        }
+        .row {
+            margin-left:50px;
+            margin-right:50px;
+            text-align:center;
+        }
+        .login p {
+            position:relative;
+            text-align:center;
+            font-size:30px;
+            color:#ffffff;
+        }
+
+        p {
+            position:relative;
+            text-align:center;
+            font-family:'Quicksand';
+            font-size:25px;
+            color:#ffffff;
+            font-weight:200;
+        }
+        h2 {
+            position:relative;
+            text-align:center;
+            font-size:30px;
+            color:#ffffff;
+            font-weight:200;
+        }
+        h3 {
+            text-align:center;
+            font-size:80px;
+            color:#ffffff;
+            font-weight:200;
+        }
+        img {
+            align:middle;
+        }
+        .btn-doctor {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            font-size: 14px;
+            padding: 5px 10px;
+        }
+        .btn-doctor img {
+            width: 50px;
+            height: auto;
+            margin-right: 10px;
+        }
+
+        /* Centering Public Login */
+        .public-login {
+            margin-top: 50px; /* Adjust the margin as needed */
+            text-align: center;
+            display: flex;
+            justify-content: center;
+        }
+
+        /* Centering Logo */
+        .logo {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+
+    <!-- script back button -->
+    <script src="cordova.js"></script>
+    <script>
+        function onLoad() {
+            document.addEventListener("deviceready", deviceReady, false);
+        }
+        function deviceReady() {
+            document.addEventListener("backbutton", backButtonCallback, false);
+        }
+        function backButtonCallback() {
+            navigator.app.exitApp();
+        }
+    </script>
+
+    <!-- angular js -->
+    <script src="js/angular-1.3.js"></script>
+    <script src="js/angular_cookies.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Veterinary App</h2>
+            </div>
+            <div class="col-md-4">
+                <img src="images/group.png">
+                <div class="login public-login"> <!-- Added class for centering -->
+                    <a href="user_login.html">
+                        <p>Public</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="logo"> <!-- Added div for centering logo -->
+        <a href="doctor_login.html" class="btn-doctor">
+            <img src="images/doctor.png">
+            <p>Doctor</p>
+        </a>
+    </div>
+
+    <script src="vendor/jquery/jquery.js"></script>
+    <script src="vendor/bootstrap/bootstrap.js"></script>
+    <script src="vendor/jquery.validation/jquery.validation.js"></script>
+    <script src="vendor/owlcarousel/owl.carousel.js"></script>
+    <script src="vendor/flexslider/jquery.flexslider-min.js"></script>
+    <script src="vendor/countdown/countdown.min.js"></script>
+    <script src="vendor/chosen/chosen.jquery.min.js"></script>
+    <script src="vendor/pricefilter/jquery.pricefilter.js"></script>
+    <script src="vendor/masonry/imagesloaded.pkgd.min.js"></script>
+</body>
+</html>
